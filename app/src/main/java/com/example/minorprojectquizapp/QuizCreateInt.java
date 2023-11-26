@@ -253,7 +253,7 @@ public class QuizCreateInt extends AppCompatActivity {
         RequestBody body = RequestBody.create(jsonBody.toString(),JSON);
         Request request = new Request.Builder()
                 .url("https://api.openai.com/v1/chat/completions")
-                .header("Authorization","Bearer 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")
+                .header("Authorization","Bearer API-KEY")
                 .post(body)
                 .build();
         Log.d("check","Before client");
